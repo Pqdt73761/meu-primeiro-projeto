@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+li:hover {
+    color: #d21617;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+
+}
+.person{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.cards-content{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+.card{
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 10px 10px;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.card:hover{
+    transform:scale(1.02);
+}
+.banner-1{
+    background-image: url("https://s3.amazonaws.com/blog.dentrodahistoria.com.br/wp-content/uploads/2018/07/19084229/ryder2-300x300.png");
+}
+
+.banner-2{
+    background-image: url("https://s3.amazonaws.com/blog.dentrodahistoria.com.br/wp-content/uploads/2018/07/19084311/chase-300x300.png");
+}
+.banner-3{
+    background-image: url("https://s3.amazonaws.com/blog.dentrodahistoria.com.br/wp-content/uploads/2018/07/19084354/skye-300x300.png");
+}
+.banner-4{
+    background-image: url("https://s3.amazonaws.com/blog.dentrodahistoria.com.br/wp-content/uploads/2018/07/19084427/rubble1-300x300.png");
+}
+.banner-5{
+    background-image: url("https://s3.amazonaws.com/blog.dentrodahistoria.com.br/wp-content/uploads/2018/07/23130142/marshall1-300x300.png");
+}
+.banner-6{
+    background-image: url("https://s3.amazonaws.com/blog.dentrodahistoria.com.br/wp-content/uploads/2018/07/19085532/rocky-300x300.png");
+}
+.banner-7{
+    background-image: url("https://s3.amazonaws.com/blog.dentrodahistoria.com.br/wp-content/uploads/2018/07/19084640/zuma-300x300.png");
+}
+
+footer{
+    height: 200px;
+   margin-top:600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+span{
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.footer-navigation{
+    display: none;
+}
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img{
+    width: 100px;
+    height: 200px;
+}
+
+@media(max-width: 768px){
+    .footer-navigation{
+        display: block;
+        
+    }
+    nav{
+        display: none ;
+        
+    }
+    
+    .button{
+        width: 100%;
+        margin-top: 30px; 
+    }
+        .cards-content{
+            grid-template-columns: 1fr; 
+                  
+        }
+        footer{
+            margin-top: 50px;
+        }
+            }

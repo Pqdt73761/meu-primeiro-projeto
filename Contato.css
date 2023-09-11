@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+li:hover {
+    color: #d21617;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.box{
+    color: white;
+    position: absolute;
+    top: 150px;
+    left: 35%;
+    background-color: aliceblue;
+    padding: 4px;
+    border-radius: 15px;
+    border: 20px double blue;
+    width: 30%;
+    margin-top: 60px;
+    
+}
+fieldset{
+    border: 8px  rgb(15, 42, 197);;
+}
+legend{
+    
+    padding: 0,1px;
+    text-align: center;
+    background-color: rgb(15, 42, 197);;
+    border-radius: 6px;
+    }
+    .inputbox{
+        position: relative;
+        font-family: Verdana, Geneva, Tahoma, sans-serif
+        
+    }
+    .inputUser{
+        background: none;
+        border: none;
+        border-bottom: 1px solid white;
+        outline: none;
+        color: white;
+        font-size: 15px;
+        width: 100%;
+        letter-spacing: 2px;
+        position: relative;
+       
+    }
+    .labelInput{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        pointer-events: none;
+        transition: 2s;
+    }
+    .inputUser:focus ~ .labelInput, 
+    .inputUser:valid ~ .labelInput{
+        top: -20px;
+        font-size: 12px;
+        color: rgb(15, 42, 197);
+    }
+    #submit{
+        cursor: pointer;
+        color: #fff;
+        border: #fff;
+    }
+  #data_nascimento{
+    border: none;
+    background-color: #fff;
+    color: black;
+    border-radius: 2px;
+    padding: 6px;
+    
+  }
+  #menssagem{
+    color: #fff;
+          
+  }
+  footer{
+    height: 200px;
+   margin-top:900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+span{
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.footer-navigation{
+    display: none;
+}
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+textarea{
+        width: 100%;
+        letter-spacing: 1px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+@media(max-width: 768px){
+    .footer-navigation{
+        display: block;
+        
+    }
+    nav{
+        display: none ;
+        
+    }
+    
+    .button{
+        width: 100%;
+        margin-top: 30px; 
+        position: absolute;
+            }
+        .box{           
+          width: 50%;
+          display: flex;
+          margin-left: -60px;
+         
+                  
+               }
+               .inputUser{
+                        width: 100%;
+                            
+            }
+                  
+        }
